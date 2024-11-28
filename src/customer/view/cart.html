@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="../../css/output.css" />
+  </head>
+  <body>
+    <div class="text-3xl text-orange-800 text-center my-10">CART</div>
+    <table
+      class="min-w-full table-auto border-collapse text-left border border-gray-500"
+    >
+      <tr class="bg-gray-50 text-white">
+        <thead>
+          <th class="px-6 py-3 bg-gray-50">Id</th>
+          <th class="px-6 py-3 bg-gray-50">Tên sản phẩm</th>
+          <th class="px-6 py-3 bg-gray-50">Hình Ảnh</th>
+          <th class="px-6 py-3 bg-gray-50">Số lượng</th>
+          <th class="px-6 py-3 bg-gray-50">Đơn giá</th>
+          <th class="px-6 py-3 bg-gray-50">Thành tiền</th>
+          <th class="px-6 py-3 bg-gray-50">Xoá sản phẩm</th>
+        </thead>
+      </tr>
+      <tbody id="tbody"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5" class="text-right font-bold p-4">Tổng tiền:</td>
+          <td id="totalPrice" class="font-bold p-4"></td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="flex items-center justify-center">
+      <button
+        class="text-3xl bg-orange-500 text-white mt-10 py-5 px-8 rounded-md hover:bg-green-500"
+        onclick="thanhToan()"
+      >
+        THANH TOÁN
+      </button>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+      integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="../controller/main.js"></script>
+  </body>
+</html>

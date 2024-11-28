@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.body {
+  @apply bg-[url('../img/bg.jpeg')] bg-cover;
+}
+.phoneSelect {
+  @apply appearance-none border border-gray-300 rounded-lg p-2 w-48 outline-none;
+}

@@ -6,6 +6,11 @@ module.exports = {
       container: {
         center: true,
       },
+
+      borderRadius: {
+        "5xl": "5rem",
+      },
+
     },
   },
   plugins: [require("flowbite/plugin")],
