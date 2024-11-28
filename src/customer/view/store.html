@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../../css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1 class="bg-red-500">Test Store</h1>
+    <div>
+      <div class="container mb-5 mt-5 flex justify-between">
+        <select name="phone" id="phoneSelect" class="phoneSelect">
+          <option value="tatCa">Tất cả</option>
+          <option value="samsung">SamSung</option>
+          <option value="iphone">Iphone</option>
+        </select>
+        <a
+          class="group text-2xl text-orange-600 hover:text-white hover:bg-orange-600 relative py-4 px-6 rounded-md"
+          href="./cart.html"
+        >
+          <div
+            id="quantity"
+            class="absolute top-0 right-2 text-orange-600 group-hover:text-white"
+          ></div>
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+      <div id="phoneProduct" class="container grid grid-cols-3 gap-4"></div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+      integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="../controller/main.js"></script>
   </body>
 </html>
