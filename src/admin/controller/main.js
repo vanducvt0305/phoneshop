@@ -38,7 +38,7 @@ const renderPhoneList = (arrPhone) => {
         <td >${name}</td>
         <td >${price}</td>
         <td >
-          <img src="${img}" class="w-full"/>
+          <img src="../../img/${img}" class="w-[100px]"/>
         </td>
         <td >${desc}</td>
         <td >
