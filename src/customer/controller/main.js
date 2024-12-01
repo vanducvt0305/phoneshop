@@ -39,7 +39,7 @@ const renderPhoneList = (arrPhone) => {
       cart.addPhone(newPhone);
       e.target.innerHTML = "Đã thêm vào giỏ hàng";
       e.target.classList.add("!bg-orange-500");
-      console.log(cart.cart);
+
       quantity.innerHTML = cart.cart.length;
       localStorage.setItem("listCart", JSON.stringify(cart.cart));
     });
@@ -133,7 +133,6 @@ const tinhTongTien = () => {
     (sum, phone) => sum + phone.price * phone.soLuong,
     0
   );
-
   document.querySelector("#totalPrice").innerHTML = total;
 };
 tinhTongTien();
